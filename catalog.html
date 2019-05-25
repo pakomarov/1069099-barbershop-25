@@ -33,7 +33,51 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="brands">
+            <legend>Производители:</legend>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="baxter">
+              Baxter of California
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="mrnatty">
+              Mr Natty
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="suavecito">
+              Suavecito
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="malingoetz">
+              Malin+Goetz
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="murrays">
+              Murray’s
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="americancrew">
+              American Crew
+            </label>
+          </fieldset>
+          <fieldset class="categories">
+            <legend>Группы товаров:</legend>
+            <label class="filter-radio">
+              <input type="radio" name="category" value="shaving">
+              Бритвенные принадлежности
+            </label>
+            <label class="filter-radio">
+              <input type="radio" name="category" value="care">
+              Средства для ухода
+            </label>
+            <label class="filter-radio">
+              <input type="radio" name="category" value="accessories">
+              Аксессуары
+            </label>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
