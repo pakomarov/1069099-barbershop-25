@@ -87,7 +87,21 @@
       <section class="appointment">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!-- Здесь будет форма -->
+        <form action="#" method="post">
+          <label for="appointment-date-field">Дата</label>
+          <input id="appointment-date-field" type="date" name="date" placeholder="08.10.2017">
+
+          <label for="appointment-time-field">Время</label>
+          <input id="appointment-time-field" type="time" name="time" placeholder="10:00">
+
+          <label for="appointment-name-field">Ваше имя</label>
+          <input id="appointment-name-field" type="text" name="name" placeholder="Борода">
+
+          <label for="appointment-phone-field">Телефон</label>
+          <input id="appointment-phone-field" type="tel" name="phone" placeholder="+7 123 456-78-90">
+
+          <button type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
