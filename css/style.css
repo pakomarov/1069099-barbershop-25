@@ -15,6 +15,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-page {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("../img/light-background.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -193,4 +202,94 @@ a {
 .restore:hover,
 .restore:active {
   text-decoration: none;
+}
+
+.inner-page .page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter-option {
+  line-height: 18px;
+}
+
+.filter-option label:hover {
+  color: #663d15;
+}
+
+.filter-option label:disabled {
+
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.catalog {
+  line-height: 18px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #ffffff;
+}
+
+/* костыль. Посмотреть как сделано в скринкасте*/
+.catalog-item a:not(.button) {
+  color: #000000;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.pagination-item:not(.pagination-item-current) a:hover,
+.pagination-item:not(.pagination-item-current) a:focus,
+.pagination-item:not(.pagination-item-current) a:active {
+  background-color: #663d15;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
 }
