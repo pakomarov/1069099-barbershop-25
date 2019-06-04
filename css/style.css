@@ -1,3 +1,5 @@
+/* Вспомогательные стили */
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +15,18 @@ body {
   background-image: url("../img/index-main-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+body > * {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+body > * > * {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+body > * > * > * {
+  background-color: rgba(0, 0, 255, 0.4);
 }
 
 .inner-page {
@@ -46,17 +60,43 @@ a {
   background-color: #663d15;
 }
 
-.main-navigation {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
+.layout-positioner {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Разметка страниц */
+
+.main-header {
+  margin-bottom: 60px;
 
   background-color: #000000;
 }
 
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
 .site-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.site-navigation {
+  width: 620px;
+}
+
+.user-navigation {
+  width: 140px;
 }
 
 .site-navigation a,
@@ -69,6 +109,10 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #242424;
+}
+
+.main-header-logo {
+  display: box;
 }
 
 .features-list {
