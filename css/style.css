@@ -17,6 +17,8 @@ body {
   background-repeat: no-repeat;
 }
 
+
+/* Временно для сетки */
 body > * {
   background-color: rgba(255, 0, 0, 0.4);
 }
@@ -27,6 +29,14 @@ body > * > * {
 
 body > * > * > * {
   background-color: rgba(0, 0, 255, 0.4);
+}
+
+body > * > * > * > * {
+  background-color: rgba(0, 255, 255, 0.4);
+}
+/* Временно для сетки */
+.visually-hidden {
+  display: none;
 }
 
 .inner-page {
@@ -111,15 +121,33 @@ a {
   background-color: #242424;
 }
 
-.main-header-logo {
-  display: box;
+.layout-logo {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 75px;
+}
+
+.layout-logo img {
+  display: block;
+}
+
+.features {
+  margin-bottom: 80px;
 }
 
 .features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
 }
 
 .feature-item {
+  width: 300px;
+
   color: #f7f4f1;
   text-align: center;
 
@@ -132,12 +160,25 @@ a {
 }
 
 .index-columns {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+
   color: #000000;
 
   background-color: #f8f5f2;
   background-image: url("../img/light-background.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.news {
+  width: 380px;
+}
+
+.gallery {
+  width: 300px;
 }
 
 .index-columns h2 {
@@ -156,6 +197,14 @@ a {
 .gallery-content {
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
 }
 
 .appointment-item input {
