@@ -18,6 +18,26 @@ body {
 }
 
 
+/* body > * {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+body > * > * {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+body > * > * > * {
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+body > * > * > * > * {
+  background-color: rgba(0, 255, 255, 0.4);
+} */
+
+.visually-hidden {
+  display: none;
+}
+
 .inner-page {
   color: #000000;
 
@@ -70,6 +90,10 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.inner-page .main-header-logo {
+  margin-right: 40px;
 }
 
 .site-navigation,
@@ -200,11 +224,19 @@ a {
 /* Элементы страницы каталога */
 
 .inner-page .page-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+
   font-size: 30px;
   line-height: 42px;
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+
   list-style: none;
 }
 
@@ -219,6 +251,15 @@ a {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.layout-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
 }
 
 .filter fieldset {
@@ -251,16 +292,33 @@ a {
   line-height: 18px;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
   list-style: none;
 }
 
 .catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+
   font-size: 14px;
   line-height: 18px;
 
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:not(:nth-child(3n)) {
+  margin-right: 20px;
 }
 
 .catalog-item:hover {
@@ -291,6 +349,9 @@ a {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -364,6 +425,10 @@ a {
   color: #ffffff;
 
   background-color: #212121;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
 }
 
 .layout-footer {
